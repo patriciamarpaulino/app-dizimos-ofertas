@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
+/* Reset de estilos */
 * {
     margin: 0;
     padding: 0;
@@ -8,70 +7,85 @@
     font-family: 'Roboto', sans-serif;
 }
 
-/* Estilos de container e outros estilos*/
-
+/* Estilos de container e outros estilos */
 body {
     font-family: 'Roboto', sans-serif;
-    margin: 0;
+  
     padding: 0;
+    overflow-y: hidden;
+    display: block;
+    margin: 0 auto;
+    background-image: url("./img/backgroundtrigo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    
+    justify-content: center;
+    display: block;
+    margin-top: 100px;
+   
 }
 
-.logo {
-    text-align: center;
-    margin-bottom: 20px;
-}
 
-.logo img {
-    width: 150px;
-}
 
 h1 {
     text-align: center;
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .form-group {
     margin-bottom: 15px;
+    display: block;
+    margin: 0 auto;
 }
 
 label {
-    display: block;
+   
     font-weight: bold;
     margin-bottom: 5px;
+    display: block;
+    margin: 0 auto;
+    text-align:center;
+    padding: 5px;
 }
 
 input[type="text"],
 input[type="number"],
 input[type="date"] {
-    width: 100%;
-    padding: 10px;
+ width: 50%;
+    padding: 5px;
     font-size: 16px;
-    border-radius: 5px;
+    border-radius: 3px;
     border: 1px solid #ccc;
+    display: block;
+    margin: 0 auto;
+ 
 }
 
 button[type="submit"] {
-    width: 100%;
-    padding: 10px;
+  
+    padding: 8px 20px;
     font-size: 18px;
-    background-color: #4caf50;
-    color: white;
+    background-color: #e06b1d;
+    color: black;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
 }
 
 button[type="submit"]:hover {
     background-color: #45a049;
 }
+/* Estilos para o rodapé */
 .footer {
     text-align: center;
     margin-top: 20px;
@@ -79,13 +93,54 @@ button[type="submit"]:hover {
 
 .footer p {
     font-size: 14px;
-    color: #666;
+    color: #030303;
+    font-weight: bold;
 }
-    @media only screen and (max-width: 600px) {
-    
-    .container {
-       
-        padding: 10px;
 
+/* Estilos para os ícones de redes sociais */
+.footer a {
+    margin: 0 10px; /* Espaço horizontal entre os ícones */
+    color: #fffdfc; /* Cor dos ícones */
+    font-size: 24px; /* Tamanho dos ícones */
+    text-decoration: none; /* Remove sublinhado nos links */
+}
+
+.footer a:hover {
+    color: #4caf50; /* Cor ao passar o mouse sobre os ícones */
+}
+
+.mensagem {
+   
+    width: 50%;
+    text-align: center;
+  
+    padding: 10px;
+    background-color: rgb(245, 215, 82);
+    color: #666;
+    border-radius: 5px;
+   display: none;
+    margin: 0 auto;
+    margin-top: 5px;
+    
+}
+/* Estilos para o layout responsivo */
+@media screen and (max-width: 600px) {
+    .container {
+        max-width: 100%; /* Garante que o conteúdo se ajuste à largura da tela */
+        padding: 10px;
+    }
+    .logo img {
+        width: 80px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    input[type="text"],
+    input[type="number"],
+    input[type="date"] {
+        font-size: 14px;
+    }
+    button[type="submit"] {
+        font-size: 16px;
     }
 }

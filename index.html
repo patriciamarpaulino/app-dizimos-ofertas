@@ -1,49 +1,57 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
     <title>Cadastro de Dízimos e Ofertas</title>
 </head>
-
 <body oncontextmenu="return false;">
-    <script src="./scripts.js"></script>
 
     <div class="container">
-        <div class="logo">
-            <img src="./img/trigo.png.png" alt="logoapp">
-        </div>
-        <h1>Cadastro de Dizimos e Ofertas</h1>
+       
+        <h1>Cadastro de Dízimos e Ofertas</h1>
         <form id="cadastroForm">
             <div class="form-group">
-                <label for="valor">Valor:</label>
+                <label for="valor">Valor</label>
                 <input type="number" id="valor" name="valor" required>
             </div>
             <div class="form-group">
-                <label for="data">Data:</label>
+                <label for="data">Data</label>
                 <input type="date" id="data" name="data" required>
             </div>
             <div class="form-group">
-                <label for="ofertas">Ofertas:</label>
+                <label for="ofertas">Ofertas</label>
                 <input type="text" id="ofertas" name="ofertas" required>
             </div>
             <div class="form-group">
-                <label for="igreja">Igreja:</label>
+                <label for="igreja">Igreja</label>
                 <input type="text" id="igreja" name="igreja" required>
             </div>
             <div class="form-group">
-                <label for="nome">Nome do Dizimista:</label>
+                <label for="nome">Nome do Dizimista</label>
                 <input type="text" id="nome" name="nome" required>
             </div>
             <button type="submit">Cadastrar</button>
         </form>
-        <footer class="footer">
-            <p>Desenvolvido por Patrícia Ferreira <a href="https://api.whatsapp.com/send/?phone=551151979923&text=Ol%C3%A1%2C+tenho+interesse+em+virar+s%C3%B3cio+do+DevClub&type=phone_number&app_absent=0">@rodolfomori</a></p>
-        </footer>
+        <div id="mensagem" class="mensagem"></div>
     </div>
-    
-</body>
 
+
+    <footer class="footer">
+    <p>Redes Sociais🚀Dev</p>
+        <a href="https://www.linkedin.com/in/patriciamarciano" target="_blank">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://www.instagram.com/pattymayaoficial" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://github.com/patriciamarpaulino" target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
+    </footer>
+    <script src="./scripts.js"></script>
+</body>
 </html>
